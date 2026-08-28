@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     viewBox="0 0 728 429" width="728" height="429" font-family="Segoe UI, Arial, sans-serif">
+  <defs><clipPath id="rc_V"><polygon points="62.0,297.3 689.0,297.3 515.1,74.0 235.9,74.0"/></clipPath></defs>
+  <rect x="0" y="0" width="728" height="429" fill="#ffffff"/>
+  <text x="364" y="22" text-anchor="middle" font-size="15" font-weight="700" fill="#222">VYCHOD (az. 68 st.) - odstup 20 cm = 9 panelu</text>
+  <g inkscape:groupmode="layer" inkscape:label="Rastr" id="l-rastr">
+    <g clip-path="url(#rc_V)" stroke="#e6e6e6" stroke-width="1">
+      <line x1="-262.5" y1="297.3" x2="-262.5" y2="74.0"/>
+      <line x1="-204.5" y1="297.3" x2="-204.5" y2="74.0"/>
+      <line x1="-146.5" y1="297.3" x2="-146.5" y2="74.0"/>
+      <line x1="-88.5" y1="297.3" x2="-88.5" y2="74.0"/>
+      <line x1="-30.5" y1="297.3" x2="-30.5" y2="74.0"/>
+      <line x1="27.5" y1="297.3" x2="27.5" y2="74.0"/>
+      <line x1="85.5" y1="297.3" x2="85.5" y2="74.0"/>
+      <line x1="143.5" y1="297.3" x2="143.5" y2="74.0"/>
+      <line x1="201.5" y1="297.3" x2="201.5" y2="74.0"/>
+      <line x1="259.5" y1="297.3" x2="259.5" y2="74.0"/>
+      <line x1="317.5" y1="297.3" x2="317.5" y2="74.0"/>
+      <line x1="375.5" y1="297.3" x2="375.5" y2="74.0"/>
+      <line x1="433.5" y1="297.3" x2="433.5" y2="74.0"/>
+      <line x1="491.5" y1="297.3" x2="491.5" y2="74.0"/>
+      <line x1="549.5" y1="297.3" x2="549.5" y2="74.0"/>
+      <line x1="607.5" y1="297.3" x2="607.5" y2="74.0"/>
+      <line x1="665.5" y1="297.3" x2="665.5" y2="74.0"/>
+      <line x1="723.5" y1="297.3" x2="723.5" y2="74.0"/>
+      <line x1="781.5" y1="297.3" x2="781.5" y2="74.0"/>
+      <line x1="839.5" y1="297.3" x2="839.5" y2="74.0"/>
+      <line x1="897.5" y1="297.3" x2="897.5" y2="74.0"/>
+      <line x1="955.5" y1="297.3" x2="955.5" y2="74.0"/>
+      <line x1="1013.5" y1="297.3" x2="1013.5" y2="74.0"/>
+      <line x1="62.0" y1="297.3" x2="689.0" y2="297.3"/>
+      <line x1="62.0" y1="239.3" x2="689.0" y2="239.3"/>
+      <line x1="62.0" y1="181.3" x2="689.0" y2="181.3"/>
+      <line x1="62.0" y1="123.3" x2="689.0" y2="123.3"/>
+    </g>
+  </g>
+  <g inkscape:groupmode="layer" inkscape:label="Strecha" id="l-strecha">
+    <polygon points="62.0,297.3 689.0,297.3 515.1,74.0 235.9,74.0" fill="#fff7e6" fill-opacity="0.55" stroke="#c9931f" stroke-width="2.5"/>
+    <line x1="94.3" y1="274.7" x2="656.7" y2="274.7" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <line x1="94.3" y1="274.7" x2="250.6" y2="74.0" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <line x1="656.7" y1="274.7" x2="500.4" y2="74.0" stroke="#c0392b" stroke-width="1.4" stroke-dasharray="6 4"/>
+    <line x1="103.0" y1="297.3" x2="103.0" y2="274.7" stroke="#c0392b" stroke-width="1.2"/>
+    <text x="110.6" y="289.0" font-size="9" font-weight="700" fill="#c0392b">39 cm</text>
+    <line x1="62.0" y1="327.3" x2="689.0" y2="327.3" stroke="#333"/>
+    <line x1="62.0" y1="322.3" x2="62.0" y2="332.3" stroke="#333"/>
+    <line x1="689.0" y1="322.3" x2="689.0" y2="332.3" stroke="#333"/>
+    <text x="375.5" y="344.3" text-anchor="middle" font-size="12" font-weight="700" fill="#333">okap  10,81 m   (odstup 39 cm, min. 20 cm)</text>
+    <line x1="235.9" y1="58.0" x2="515.1" y2="58.0" stroke="#8a5a00"/>
+    <line x1="235.9" y1="53.0" x2="235.9" y2="63.0" stroke="#8a5a00"/>
+    <line x1="515.1" y1="53.0" x2="515.1" y2="63.0" stroke="#8a5a00"/>
+    <text x="375.5" y="52.0" text-anchor="middle" font-size="11" font-weight="700" fill="#8a5a00">horni hrana  4,81 m   (kominy - BEZ odstupu)</text>
+    <line x1="40.0" y1="297.3" x2="40.0" y2="74.0" stroke="#333"/>
+    <line x1="35.0" y1="297.3" x2="45.0" y2="297.3" stroke="#333"/>
+    <line x1="35.0" y1="74.0" x2="45.0" y2="74.0" stroke="#333"/>
+    <text x="34.0" y="185.65" text-anchor="middle" font-size="12" font-weight="700" fill="#333" transform="rotate(-90 34.0,185.65)">spadnice  3,85 m  (sklon 60 st.)</text>
+  </g>
+  <g inkscape:groupmode="layer" inkscape:label="Panely" id="l-panely">
+    <g fill="#bcd7f5" stroke="#1a5fb4" stroke-width="1.5" fill-opacity="0.92">
+      <rect x="147.1" y="208.9" width="113.3" height="65.8" rx="2"/>
+      <rect x="261.6" y="208.9" width="113.3" height="65.8" rx="2"/>
+      <rect x="376.1" y="208.9" width="113.3" height="65.8" rx="2"/>
+      <rect x="490.6" y="208.9" width="113.3" height="65.8" rx="2"/>
+      <rect x="204.3" y="141.6" width="113.3" height="65.8" rx="2"/>
+      <rect x="318.8" y="141.6" width="113.3" height="65.8" rx="2"/>
+      <rect x="433.3" y="141.6" width="113.3" height="65.8" rx="2"/>
+      <rect x="261.6" y="74.3" width="113.3" height="65.8" rx="2"/>
+      <rect x="376.1" y="74.3" width="113.3" height="65.8" rx="2"/>
+    </g>
+    <g font-size="12" font-weight="700" text-anchor="middle" fill="#123">
+      <text x="203.8" y="245.8">1</text>
+      <text x="318.2" y="245.8">2</text>
+      <text x="432.7" y="245.8">3</text>
+      <text x="547.2" y="245.8">4</text>
+      <text x="261.0" y="178.5">5</text>
+      <text x="375.5" y="178.5">6</text>
+      <text x="490.0" y="178.5">7</text>
+      <text x="318.2" y="111.2">8</text>
+      <text x="432.7" y="111.2">9</text>
+    </g>
+  </g>
+  <g font-size="11" fill="#123">
+    <rect x="20" y="349.3" width="688" height="95" rx="6" fill="#f6f9ff" stroke="#1a5fb4"/>
+    <text x="32" y="365.3">VYCHOD: 9 panelu. Rady zdola: 4n + 3n + 2n   (n = nalezato, s = nastojato).</text>
+    <text x="32" y="380.3">Sestava je posunuta co nejvys - nahore odstup neni potreba, volne misto tak zbyva dole u okapu.</text>
+    <text x="32" y="395.3">Skutecne odstupy: okap 39 cm (min. 20), nahore 1 cm, boky 20 cm kolmo k hrane.</text>
+    <text x="32" y="410.3">Maximum pro tyto odstupy - hledano pres vsechny pozice rad po 1 cm i orientace rad.</text>
+    <text x="32" y="425.3">POZOR: mensi odstup nez doporucenych 30 cm - overit s montazni firmou (vitr, odtok vody, pristup).</text>
+  </g>
+  <g fill="#333" font-size="8">
+    <rect x="10" y="30" width="236" height="36" rx="4" fill="#f7f7f7" stroke="#bbb"/>
+    <text x="16" y="41" font-weight="700">Rozmer panelu (mm): nalezato 1954 x 1134, nastojato 1134 x 1954</text>
+    <text x="16" y="51">mezera 2 cm | odstup okap 20 cm, boky 20 cm, nahore 0</text>
+    <text x="16" y="61">meritko 1 m = 58 px</text>
+  </g>
+</svg>
