@@ -157,7 +157,7 @@
   </div>
   <div class="spec-card">
     <div class="label">Sklon střechy</div>
-    <div class="value">60°</div>
+    <div class="value">30°</div>
     <div class="note">3 plochy: Jih, Západ, Východ</div>
   </div>
   <div class="spec-card">
@@ -167,8 +167,8 @@
   </div>
   <div class="spec-card">
     <div class="label">Odhad roční výroby</div>
-    <div class="value">~11 520 kWh</div>
-    <div class="note">PVGIS, sklon 60°, systémové ztráty 14 %</div>
+    <div class="value">~12 640 kWh</div>
+    <div class="note">PVGIS, sklon 30°, systémové ztráty 14 %</div>
   </div>
   <div class="spec-card">
     <div class="label">Smart řízení</div>
@@ -290,9 +290,20 @@
   Při 30 cm se vejde jen 8 panelů. Alternativně lze připustit rožky spodní řady 3 cm do okapového pásu místo zúžení celého bočního pásu. Prosím firmu o doporučení.
 </div>
 
+<div class="callout red">
+  <strong>OPRAVA 29. 8. 2026 — sklon střechy je 30°, ne 60°</strong>
+  Původní údaj 60° byl <strong>omylem změřen od svislice</strong>, ne od vodorovné roviny.
+  Skutečný sklon všech tří ploch je <strong>30°</strong>.<br><br>
+  <strong>Co se tím mění:</strong> odhad roční výroby stoupá z ~11 520 na <strong>~12 640 kWh</strong>
+  (mírnější sklon je v našich zeměpisných šířkách výhodnější). Rozměry ploch, počet panelů (28)
+  ani jejich rozvržení se <strong>nemění</strong> — délky spádnic byly měřeny po povrchu střechy,
+  takže na výkladu úhlu nezávisí.<br><br>
+  Pokud jste nabídku už rozpracovali s hodnotou 60°, omlouvám se za komplikaci.
+</div>
+
 <h3>Rozměry ploch</h3>
 <p>
-  Sklon všech tří ploch je <strong>60°</strong>.
+  Sklon všech tří ploch je <strong>30°</strong>.
   Horní hrana každé plochy leží u paty komínů — v nákresech komíny nejsou, protože rozvržení končí přesně na horní hraně bez dalšího přídavného odstupu.
   <strong>Fyzický odstup od komínů a střešních oken je cca 15–25 cm</strong>,
   daný oplechováním a šířkou okapu dlaždic — panely nesahají k samotné konstrukci komínu.
@@ -1182,7 +1193,7 @@ rozpočet, vadí mi nejasný.</p>
 
 <h4>F. Práce, doprava, přístup</h4>
 <div class="callout warn">
-  <strong>Sklon střechy je 60° — dopravu materiálu na střechu si řešíte sami</strong>
+  <strong>Dopravu materiálu na střechu si řešíte sami</strong>
   Jak dostanete panely a techniku nahoru je součást vaší dodávky, ne moje otázka.
   Prosím jen uveďte, jaké řešení volíte (lešení, plošina, jeřáb) a na jak dlouho
   bude na pozemku, ať s tím počítám. Přístup na pozemek zajistím.
@@ -1268,12 +1279,32 @@ rozpočet, vadí mi nejasný.</p>
 <div class="callout warn">
   <strong>Komín na Východní ploše — viz fotografie níže</strong>
   Na Východní střešní ploše se nachází komín u horní hrany. Na dronové fotografii je vidět jeho stín
-  v odpoledních hodinách v srpnu. Tato plocha je zároveň orientována ENE (az. 68°, sklon 60°) a vyrábí
+  v odpoledních hodinách v srpnu. Tato plocha je zároveň orientována ENE (az. 68°, sklon 30°) a vyrábí
   primárně ráno.
 </div>
 <ul class="req-list">
   <li data-icon="❓">Uvažujete při návrhu 3D analýzu stínění? Jak velký vliv může mít komín na roční výrobu Východního stringu?</li>
-  <li data-icon="❓">Je na základě analýzy stínění nutné instalovat optimizéry na <em>všechny</em> panely Východního stringu, nebo pouze na přímo zastiňované panely? Upřesněte: používáte systém Tigo (selektivní nasazení) nebo jiný? Platí u vašeho řešení nutnost optimizérů na celý string, nebo jen na postižené panely?</li>
+  <li data-icon="❓">Je na základě analýzy stínění nutné instalovat optimizéry na <em>všechny</em> panely, nebo pouze na přímo zastiňované? Upřesněte: používáte systém Tigo (selektivní nasazení) nebo jiný?</li>
+</ul>
+
+<div class="callout warn">
+  <strong>Souvislost optimizérů se zapojením stringů na MPPT — prosím o vyjádření</strong>
+  Podle dokumentace Tigo lze <strong>selektivní nasazení</strong> (TS4-A-O jen na zastíněné panely,
+  TS4-A-S na ostatní) použít <strong>pouze u stringu, který má vlastní MPPT</strong>. U paralelních
+  stringů na jednom MPPT Tigo selektivní optimalizaci nepodporuje a vyžaduje TS4-A-O na
+  <strong>každém</strong> panelu.<br><br>
+  Navrhované zapojení (MPPT1 = Jih ∥ Východ, MPPT2 = Západ) by tedy znamenalo, že případné
+  optimizéry na Jihu si vynutí osazení všech 18 panelů na MPPT1.<br><br>
+  <strong>Uveďte prosím:</strong>
+  <ul style="margin:8px 0 0 18px">
+    <li>Potvrzujete tento výklad, nebo to u vašeho řešení platí jinak?</li>
+    <li>Navrhujete jiné rozdělení stringů na MPPT, které by to obešlo?</li>
+    <li>Jaký je cenový rozdíl mezi TS4-A-O a TS4-A-S za kus?</li>
+    <li>Zvažujete variantu <strong>druhého menšího měniče</strong> pro třetí plochu místo paralelního zapojení?</li>
+  </ul>
+</div>
+
+<ul class="req-list">
   <li data-icon="❓">Jaký vliv má ranní stínění komínem (typicky 6–9h) na celkovou produkci Východní plochy — je to problém, nebo zanedbatelná ztráta?</li>
 </ul>
 
