@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1035" height="1113" viewBox="0 0 1035 1113" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="518" y="34" font-size="21" font-weight="700" text-anchor="middle">Půdorys střechy — Všenory, Václava Křena 140</text>
+<text x="518" y="54" font-size="12" fill="#555" text-anchor="middle">Kóty v půdorysu (vodorovně). Sklony a azimuty z proložení mračna bodů, výšky komínů měřeny pásmem 30. 8. 2026.</text>
+<polygon points="905.1,674.5 350.2,925.0 486.7,572.9 558.8,540.8" fill="#ffe9e9" stroke="#333" stroke-width="1.5"/>
+<polygon points="350.2,925.0 130.0,444.5 486.7,572.9" fill="#e9f0ff" stroke="#333" stroke-width="1.5"/>
+<polygon points="130.0,444.5 689.4,190.0 558.8,540.8 486.7,572.9" fill="#eef1f4" stroke="#333" stroke-width="1.5"/>
+<polygon points="689.4,190.0 905.1,674.5 558.8,540.8" fill="#fff8e0" stroke="#333" stroke-width="1.5"/>
+<polygon points="726.8,825.7 573.0,895.1 546.5,836.5 587.1,721.3 700.3,767.0" fill="#f3d9b0" stroke="#8a5a2b" stroke-width="2"/>
+<line x1="546.5" y1="836.5" x2="587.1" y2="721.3" stroke="#8a5a2b" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.7"/>
+<line x1="700.3" y1="767.0" x2="587.1" y2="721.3" stroke="#8a5a2b" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.7"/>
+<line x1="649.9" y1="860.4" x2="587.1" y2="721.3" stroke="#8a5a2b" stroke-width="2.5" stroke-dasharray="7,4"/>
+<text x="649.9" y="880.4" font-size="13" font-weight="700" fill="#8a5a2b" text-anchor="middle">vikýř</text>
+<text x="649.9" y="895.4" font-size="10" fill="#8a5a2b" text-anchor="middle">přesah 1.40 m za okap · základna 3.25 m · trojúhelník 2.31 m po spádnici</text>
+<line x1="486.7" y1="572.9" x2="558.8" y2="540.8" stroke="#c00" stroke-width="4"/>
+<polygon points="398.2,589.1 388.9,568.0 437.2,546.5 446.6,567.6" fill="#555" stroke="#000" stroke-width="1.2"/>
+<text x="417.7" y="571.8" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">SZ</text>
+<text x="417.7" y="589.8" font-size="10" fill="#222" text-anchor="middle">115×50 · +58 cm</text>
+<polygon points="592.0,503.3 582.6,482.3 616.2,467.4 625.6,488.4" fill="#555" stroke="#000" stroke-width="1.2"/>
+<text x="604.1" y="489.4" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">SV</text>
+<text x="604.1" y="507.4" font-size="10" fill="#222" text-anchor="middle">80×50 · +58 cm</text>
+<polygon points="486.8,661.4 477.5,640.4 498.5,631.0 507.8,652.1" fill="#555" stroke="#000" stroke-width="1.2"/>
+<text x="492.6" y="650.2" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">JZ</text>
+<text x="492.6" y="668.2" font-size="10" fill="#222" text-anchor="middle">50×50 · +39 cm</text>
+<polygon points="603.5,609.5 594.1,588.5 615.1,579.1 624.5,600.1" fill="#555" stroke="#000" stroke-width="1.2"/>
+<text x="609.3" y="598.3" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">JV</text>
+<text x="609.3" y="616.3" font-size="10" fill="#222" text-anchor="middle">50×50 · +39 cm</text>
+<polygon points="671.5,574.7 656.2,540.2 677.2,530.9 692.6,565.3" fill="#555" stroke="#000" stroke-width="1.2"/>
+<text x="674.4" y="556.8" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">JV</text>
+<text x="674.4" y="574.8" font-size="10" fill="#222" text-anchor="middle">50×82 · +39 cm</text>
+<text x="587.8" y="699.5" font-size="15" font-weight="700" text-anchor="middle">Jih</text>
+<text x="587.8" y="717.5" font-size="12" fill="#444" text-anchor="middle">az. 155° · sklon 36.5°</text>
+<text x="347.5" y="628.1" font-size="15" font-weight="700" text-anchor="middle">Západ</text>
+<text x="347.5" y="646.1" font-size="12" fill="#444" text-anchor="middle">az. 246° · sklon 35.5°</text>
+<text x="452.7" y="400.3" font-size="15" font-weight="700" text-anchor="middle">Sever</text>
+<text x="452.7" y="418.3" font-size="12" fill="#444" text-anchor="middle">az. 337° · sklon 37.0°</text>
+<text x="693.0" y="471.6" font-size="15" font-weight="700" text-anchor="middle">Východ</text>
+<text x="693.0" y="489.6" font-size="12" fill="#444" text-anchor="middle">az. 66° · sklon 37.5°</text>
+<text x="627.7" y="793.8" font-size="14" font-weight="700" fill="#0a0" text-anchor="middle" transform="rotate(335.7 627.7 793.8)">13.24 m</text>
+<text x="240.1" y="678.7" font-size="14" font-weight="700" fill="#0a0" text-anchor="middle" transform="rotate(65.4 240.1 678.7)">11.49 m</text>
+<text x="409.7" y="311.2" font-size="14" font-weight="700" fill="#0a0" text-anchor="middle" transform="rotate(-24.5 409.7 311.2)">13.36 m</text>
+<text x="797.3" y="426.3" font-size="14" font-weight="700" fill="#0a0" text-anchor="middle" transform="rotate(66.0 797.3 426.3)">11.53 m</text>
+<circle cx="905.1" cy="674.5" r="4" fill="#333"/>
+<text x="912.1" y="668.5" font-size="12" fill="#333">JV</text>
+<circle cx="350.2" cy="925.0" r="4" fill="#333"/>
+<text x="357.2" y="919.0" font-size="12" fill="#333">JZ</text>
+<circle cx="130.0" cy="444.5" r="4" fill="#333"/>
+<text x="137.0" y="438.5" font-size="12" fill="#333">SZ</text>
+<circle cx="689.4" cy="190.0" r="4" fill="#333"/>
+<text x="696.4" y="184.0" font-size="12" fill="#333">SV</text>
+<text x="130" y="1013" font-size="13" font-weight="700">Výšky (m n. m.)</text>
+<text x="130" y="1031" font-size="12" fill="#444">okap 199,59 · hřeben 203,86 (+4,27 m nad okapem) · délka hřebene 1.72 m</text>
+<text x="130" y="1046" font-size="12" fill="#444">komíny: rozměry v cm (podél hřebene × kolmo) a výška nad hřebenem</text>
+<text x="130" y="1061" font-size="12" fill="#444">severní komíny +58 cm = 204,44 m · jižní +39 cm = 204,25 m (měřeno pásmem)</text>
+<text x="130" y="1076" font-size="12" fill="#444">vikýř: půdorys je obdélník (přesah 1.40 m před okap) + TROJÚHELNÍK zaříznutý do střechy</text>
+<text x="130" y="1091" font-size="12" fill="#444">vikýř: základna 3.25 m na okapu, 2.31 m po spádnici (ruční míra), v půdorysu 1.92 m</text>
+<text x="130" y="1106" font-size="12" fill="#444">vikýř: hřeben 201.13 m n. m. = 1.54 m nad okapem; šířka střechy vikýře z mračna 3.67 m</text>
+<text x="130" y="1121" font-size="12" fill="#444">nad vikýřem ke komínům 240 cm po spádnici (měřeno pásmem)</text>
+<text x="855" y="80" font-size="12" fill="#888">sever ↑</text>
+</svg>

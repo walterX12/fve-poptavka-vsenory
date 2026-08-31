@@ -87,6 +87,11 @@
   .scope-box ul { padding-left: 18px; font-size: 14px; line-height: 1.7; }
 
   /* req list */
+  .tab { width: 100%; border-collapse: collapse; font-size: 14px; margin: 14px 0; }
+  .tab th { background: #f0f0f0; text-align: left; padding: 9px 10px; border: 1px solid #ddd; font-weight: 600; }
+  .tab td { padding: 9px 10px; border: 1px solid #ddd; }
+  .tab tbody tr:nth-child(even) { background: #fafafa; }
+
   .req-list { list-style: none; padding: 0; }
   .req-list li { padding: 8px 12px 8px 36px; position: relative; border-bottom: 1px solid #eee; font-size: 14px; }
   .req-list li:last-child { border-bottom: none; }
@@ -123,6 +128,8 @@
   <a href="#prehled">Přehled</a>
   <a href="#tarif">Tarif &amp; energie</a>
   <a href="#strecha">Střecha &amp; nákresy</a>
+  <a href="#podklady">Podklady pro simulaci</a>
+  <a href="#zastineni">Analýza zastínění</a>
   <a href="#technika">Technika</a>
   <a href="#baterie">Baterie</a>
   <a href="#scope">Rozsah dodávky</a>
@@ -157,8 +164,8 @@
   </div>
   <div class="spec-card">
     <div class="label">Sklon střechy</div>
-    <div class="value">38,9°</div>
-    <div class="note">3 plochy: Jih, Západ, Východ</div>
+    <div class="value">36–37,5°</div>
+    <div class="note">Jih 36,5° · Západ 35,5° · Východ 37,5°</div>
   </div>
   <div class="spec-card">
     <div class="label">Odběrná místa</div>
@@ -167,8 +174,8 @@
   </div>
   <div class="spec-card">
     <div class="label">Odhad roční výroby</div>
-    <div class="value">~12 575 kWh</div>
-    <div class="note">PVGIS, sklon 38,9°, systémové ztráty 14 %</div>
+    <div class="value">~12 660 kWh</div>
+    <div class="note">PVGIS, změřené sklony, systémové ztráty 14 %</div>
   </div>
   <div class="spec-card">
     <div class="label">Smart řízení</div>
@@ -217,7 +224,7 @@
   <a href="images/drone/jih.jpg" target="_blank">
     <img src="images/drone/jih.jpg" alt="Jižní plocha — foto z dronu">
   </a>
-  <div class="ph-label">Jižní plocha (SSE, az. 158°) — foto z dronu. Platí pro obě varianty níže.</div>
+  <div class="ph-label">Jižní plocha (SSE, az. 155°) — foto z dronu. Platí pro obě varianty níže.</div>
 </div>
 
 <div class="var-block">
@@ -261,7 +268,7 @@
     <a href="images/drone/zapad.jpg" target="_blank">
       <img src="images/drone/zapad.jpg" alt="Západní plocha — foto z dronu">
     </a>
-    <div class="ph-label">Západní plocha (WSW, az. 248°) — foto z dronu</div>
+    <div class="ph-label">Západní plocha (WSW, az. 246°) — foto z dronu</div>
   </div>
 </div>
 <div class="callout warn">
@@ -282,7 +289,7 @@
     <a href="images/drone/vychod.jpg" target="_blank">
       <img src="images/drone/vychod.jpg" alt="Východní plocha — foto z dronu">
     </a>
-    <div class="ph-label">Východní plocha (ENE, az. 68°) — foto z dronu</div>
+    <div class="ph-label">Východní plocha (ENE, az. 66°) — foto z dronu</div>
   </div>
 </div>
 <div class="callout warn">
@@ -291,11 +298,12 @@
 </div>
 
 <div class="callout red">
-  <strong>OPRAVA 29. 8. 2026 — sklon střechy je 38,9°, ne 60°</strong>
+  <strong>OPRAVA — sklon střechy je 36–37,5°, ne 60°</strong>
   Původní údaj 60° byl <strong>omylem změřen od svislice</strong>, ne od vodorovné roviny.
-  Finální hodnota <strong>38,9°</strong> je ověřená z fotogrammetrického modelu střechy
-  (rozteč řad tašek, proložení rovin) i přímým doměřením.<br><br>
-  <strong>Co se tím mění:</strong> odhad roční výroby stoupá z ~11 520 na <strong>~12 575 kWh</strong>
+  Sklony i azimuty jsme následně <strong>změřili z fotogrammetrického modelu střechy</strong>
+  (proložení rovin mračnem bodů z dronu, 30. 8. 2026) — každá plocha zvlášť:
+  <strong>Jih 36,5°, Západ 35,5°, Východ 37,5°</strong>.<br><br>
+  <strong>Co se tím mění:</strong> odhad roční výroby stoupá z ~11 520 na <strong>~12 660 kWh</strong>
   (mírnější sklon je v našich zeměpisných šířkách výhodnější). Rozměry ploch, počet panelů (28)
   ani jejich rozvržení se <strong>nemění</strong> — délky spádnic byly měřeny po povrchu střechy,
   takže na výkladu úhlu nezávisí.<br><br>
@@ -304,19 +312,21 @@
 
 <h3>Rozměry ploch</h3>
 <p>
-  Sklon všech tří ploch je <strong>38,9°</strong>.
+  Sklony a azimuty jsou <strong>změřené z fotogrammetrického modelu</strong> (proložení rovin
+  mračnem bodů), viz tabulka. Dřívější údaje 158 / 248 / 68° pocházely z kompasu a liší se
+  o 2–3°, což je v mezích přesnosti obou metod.
   Horní hrana každé plochy leží u paty komínů — v nákresech komíny nejsou, protože rozvržení končí přesně na horní hraně bez dalšího přídavného odstupu.
   <strong>Fyzický odstup od komínů a střešních oken je cca 15–25 cm</strong>,
   daný oplechováním a šířkou okapu dlaždic — panely nesahají k samotné konstrukci komínu.
 </p>
 
 <table>
-  <thead><tr><th>Plocha</th><th>Azimut</th><th>Okap (dole)</th><th>Horní hrana (u komínů)</th><th>Spádnice</th><th>Panely</th><th>kWp</th></tr></thead>
+  <thead><tr><th>Plocha</th><th>Azimut</th><th>Sklon</th><th>Okap (dole)</th><th>Horní hrana (u komínů)</th><th>Spádnice</th><th>Panely</th><th>kWp</th></tr></thead>
   <tbody>
-    <tr><td><strong>Jih</strong></td><td>158°</td><td>12,69 m</td><td>5,49 m</td><td>4,62 m</td><td>9</td><td>4,5</td></tr>
-    <tr><td><strong>Západ</strong></td><td>248°</td><td>10,81 m</td><td>3,64 m</td><td>4,60 m</td><td>10</td><td>5,0</td></tr>
-    <tr><td><strong>Východ</strong></td><td>68°</td><td>10,81 m</td><td>4,81 m</td><td>3,85 m</td><td>9</td><td>4,5</td></tr>
-    <tr style="font-weight:700"><td colspan="5">Celkem</td><td>28</td><td>14,0 kWp</td></tr>
+    <tr><td><strong>Jih</strong></td><td>155°</td><td>36,5°</td><td>12,69 m</td><td>5,49 m</td><td>4,62 m</td><td>9</td><td>4,5</td></tr>
+    <tr><td><strong>Západ</strong></td><td>246°</td><td>35,5°</td><td>10,81 m</td><td>3,64 m</td><td>4,60 m</td><td>10</td><td>5,0</td></tr>
+    <tr><td><strong>Východ</strong></td><td>66°</td><td>37,5°</td><td>10,81 m</td><td>4,81 m</td><td>3,85 m</td><td>9</td><td>4,5</td></tr>
+    <tr style="font-weight:700"><td colspan="6">Celkem</td><td>28</td><td>14,0 kWp</td></tr>
   </tbody>
 </table>
 
@@ -394,6 +404,308 @@ ujištění:</strong></p>
 </section>
 
 <!-- ====== TECHNIKA ====== -->
+<!-- ====== PODKLADY PRO SIMULACI ====== -->
+<section id="podklady">
+<h2>Podklady pro vlastní výpočet zastínění</h2>
+
+<p>Střechu i okolí jsme zaměřili dronem a pásmem. Níže jsou <strong>všechny podklady, které
+potřebujete k tomu, abyste si zastínění spočítali vlastním softwarem</strong> — kótovaný půdorys,
+prostorový model a strojově čitelný profil obzoru. Nemusíte nic doměřovat ani nic brát na slovo.</p>
+
+<h3>Kótovaný půdorys střechy</h3>
+<p>Rozměry jsou <strong>skutečné rozměry střechy</strong> z proložení mračna bodů z dronu —
+tedy včetně nárožních hřebenáčů. <strong>Nejsou to plochy pro panely</strong>, ty jsou o něco
+menší (viz upozornění pod výkresem).</p>
+
+<div class="drawing-card">
+  <a href="images/model/pudorys_strechy_kotovany.svg" target="_blank">
+    <img src="images/model/pudorys_strechy_kotovany.svg" alt="Kótovaný půdorys střechy s komíny a vikýřem">
+  </a>
+  <div class="caption">
+    <strong>Půdorys — okapové hrany, hřeben, pět komínů, vikýř</strong>
+    Kóty jsou v půdorysném průmětu (vodorovně), ne po spádnici. Výšky komínů měřeny pásmem.
+  </div>
+</div>
+
+<div class="callout">
+  <strong>Klíčové rozměry</strong>
+  Okap <strong>199,59 m n. m.</strong> · hřeben <strong>203,86 m n. m.</strong> (+4,27 m) ·
+  délka hřebene jen <strong>1,72 m</strong> (valbová střecha, téměř jehlan).<br>
+  Okapové hrany: jih 13,24 m · západ 11,49 m · sever 13,36 m · východ 11,53 m.<br>
+  Severní komíny <strong>+58 cm nad hřeben</strong> (204,44 m), jižní <strong>+39 cm</strong> (204,25 m).<br>
+  Vikýř na jižní ploše <strong>přesahuje půdorys o 1,40 m</strong>, základna 3,25 m,
+  zasahuje 2,31 m po spádnici.
+</div>
+
+<div class="callout warn">
+  <strong>⚠️ Půdorys ≠ plocha pro panely — liší se o hřebenáče</strong>
+  Rozměry výše jsou celá střecha. Plochy, do kterých se dají klást panely, jsou
+  <strong>o 28 až 36 cm na každém nároží menší</strong> — o nárožní hřebenáče a nutný odstup.
+  Proto v nákresech rozmístění panelů najdete jižní okap <strong>12,69 m</strong> a boční
+  <strong>10,81 m</strong>, ne rozměry z tohoto půdorysu. <strong>Nemíchejte ty dvě sady čísel.</strong>
+  Pokud vám vlastní zaměření vyjde jinak, řiďte se jím a dejte nám vědět.
+</div>
+
+<h3>Prostorový model — střecha a okolní překážky</h3>
+<p>Model je <strong>kreslený ze změřených čísel</strong>, ne mračno bodů. Sousední zástavba
+a porost jsou <strong>schematické kvádry, koule a kužely</strong> v zaměřených polohách
+a výškách — kreslíme je proto, že právě ony stíní. Fotografie cizích pozemků nezveřejňujeme.</p>
+
+<p><strong>Panely v modelu záměrně nejsou.</strong> Jejich rozmístění je vztažené k ploše pro
+panely, ne k rozměrům střechy, a v modelu domu by jen mátlo. Závazné je
+<a href="#strecha">rozmístění panelů</a> výše.</p>
+
+<div class="gallery">
+  <a href="images/model/model_pro_firmy_shora.png" target="_blank">
+    <img src="images/model/model_pro_firmy_shora.png" alt="Model shora">
+    <div class="ph-label">Shora — komíny, vikýř a hřebenáče</div>
+  </a>
+  <a href="images/model/model_pro_firmy_jihozapad.png" target="_blank">
+    <img src="images/model/model_pro_firmy_jihozapad.png" alt="Model od jihozápadu">
+    <div class="ph-label">Od jihozápadu — habr a okolní zástavba</div>
+  </a>
+  <a href="images/model/model_pro_firmy_jihovychod.png" target="_blank">
+    <img src="images/model/model_pro_firmy_jihovychod.png" alt="Model od jihovýchodu">
+    <div class="ph-label">Od jihovýchodu — smrk a lípa, hlavní zdroj stínu</div>
+  </a>
+  <a href="images/model/model_pro_firmy_okoli.png" target="_blank">
+    <img src="images/model/model_pro_firmy_okoli.png" alt="Model celého okolí">
+    <div class="ph-label">Celé okolí — borovice 42 m od domu, nejvyšší překážka</div>
+  </a>
+</div>
+
+<div class="callout warn">
+  <strong>⚠️ Co v modelu není přesné</strong>
+  <strong>Hřebenáče</strong> kreslíme 12 cm vysoké. Z mračna vychází spíš 17 cm, to už ale
+  v modelu vypadá, jako by hřebenáč nad střechou plaval. Rozdíl je vědomý.<br><br>
+  <strong>Vikýř</strong> je v modelu zakreslený tak, že jeho střecha zasahuje 2,39 m po
+  spádnici, zatímco pro panely platí <strong>2,31 m</strong>. Hřebenáč vikýře totiž nesahá
+  až k hlavní střeše, takže panelům nepřekáží. Pro rozmístění panelů platí 2,31 m.
+</div>
+
+<h3>Zaměřené překážky</h3>
+<p>Výšky jsou ověřené <strong>třemi nezávislými způsoby</strong> — proložením mračna bodů z dronu,
+zpětným výpočtem z délky vrženého stínu na fotografii se známým časem, a přímým náletem dronu
+do úrovně vrcholu. Shoda mezi metodami je 0,1 až 0,6 m.</p>
+
+<table class="tab">
+  <thead>
+    <tr>
+      <th>Překážka</th><th>Azimut</th><th>Vzdálenost</th>
+      <th>Vrchol</th><th>Nad okapem</th><th>Úhel od okapu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Lípa</td><td>76°</td><td>18,0 m</td><td>204,0 m n. m.</td><td>+4,5 m</td><td>13,9°</td></tr>
+    <tr><td><strong>Smrk</strong></td><td>97°</td><td>20,0 m</td><td>208,5 m n. m.</td><td><strong>+8,9 m</strong></td><td><strong>24,1°</strong></td></tr>
+    <tr><td><strong>Borovice</strong></td><td>121°</td><td>43,0 m</td><td>217,9 m n. m.</td><td><strong>+18,4 m</strong></td><td><strong>23,1°</strong></td></tr>
+    <tr><td>Habr</td><td>281°</td><td>20,0 m</td><td>204,9 m n. m.</td><td>+5,3 m</td><td>14,8°</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warn">
+  <strong>⚠️ Porost roste</strong>
+  Smrk i borovice jsou živé stromy a ani jeden není náš — kácení nelze slíbit.
+  Prosím počítejte i variantu <strong>„okolí o 2 m vyšší“</strong>; považujeme ji za realistický
+  desetiletý výhled.
+</div>
+
+<h3>Data ke stažení</h3>
+<div class="scope-box">
+  <p><strong><a href="data/obzor_vsenory.csv">obzor_vsenory.csv</a></strong> — profil obzoru po 2° azimutu,
+  zvlášť pro každou ze tří ploch, počítaný z těžiště jejího pole panelů.
+  <strong>Vlastní dům je vymaskován</strong>, takže jsou v něm jen překážky v okolí —
+  stín vlastních komínů a hřebene si doplňte z kótovaného půdorysu.</p>
+
+  <p><strong><a href="data/prekazky_vsenory.csv">prekazky_vsenory.csv</a></strong> — zaměřené stromy
+  s azimutem, vzdáleností, výškou vrcholu a poloměrem koruny. Vše vztaženo ke středu střechy.</p>
+
+  <p style="margin-bottom:0"><strong>Poloha:</strong> 49,9335° N · 14,3100° E, okap 199,59 m n. m.</p>
+</div>
+</section>
+
+<!-- ====== NAŠE ANALÝZA ZASTÍNĚNÍ ====== -->
+<section id="zastineni">
+<h2>Naše analýza zastínění — orientační</h2>
+
+<div class="callout red">
+  <strong>Přiznáváme rovnou: tuhle analýzu zpracovala umělá inteligence</strong>
+  Výpočet níže vznikl s pomocí AI nad daty z dronu. <strong>Nemusíte se na něj spoléhat
+  a nechceme, abyste podle něj cokoli garantovali</strong> — profesionální software
+  (PV*SOL, PVsyst, Solergo) to udělá lépe a vy ho máte. Berte to jako podklad k rychlé
+  orientaci a jako důkaz, že jsme si okolní stín změřili a nezametáme ho pod koberec.
+  <strong>Pokud vám vyjde něco jiného, řiďte se svým výsledkem</strong> — jen nám prosím
+  napište, v čem se lišíme.
+</div>
+
+<h3>Ztráta zastíněním po jednotlivých panelech</h3>
+<div class="drawing-card">
+  <a href="images/model/mapa_ztrat_panelu.png" target="_blank">
+    <img src="images/model/mapa_ztrat_panelu.png" alt="Mapa roční ztráty zastíněním po panelech">
+  </a>
+  <div class="caption">
+    <strong>Roční ztráta zastíněním [%] pro každý panel</strong>
+    Čím tmavší, tím horší. Čísla jsou procenta ročního úbytku proti nezastíněnému panelu.
+  </div>
+</div>
+
+<div class="spec-grid">
+  <div class="spec-card">
+    <div class="label">Východ — 9 panelů</div>
+    <div class="value">8,8 %</div>
+    <div>průměrná ztráta · nejhorší panel 12,8 %<br>na svědomí to má smrk a lípa</div>
+  </div>
+  <div class="spec-card">
+    <div class="label">Jih — 9 panelů</div>
+    <div class="value">3,1 %</div>
+    <div>průměrná ztráta · nejhorší panel 5,7 %<br>borovice na jihovýchodě</div>
+  </div>
+  <div class="spec-card">
+    <div class="label">Západ — 10 panelů</div>
+    <div class="value">1,6 %</div>
+    <div>průměrná ztráta · nejhorší panel 3,0 %<br>habr, ale až pozdě odpoledne</div>
+  </div>
+</div>
+
+<h3>Kam padá stín a kdy na tom záleží</h3>
+
+<p>Okamžiky na obrázku <strong>nejsou vybrané odhadem</strong>. Spočítali jsme hodinu po hodině
+celý rok, kolik která kombinace měsíce a hodiny ubírá z roční ztráty přímým ozářením,
+a vybrali těch šest nejdražších.</p>
+
+<div class="drawing-card">
+  <a href="images/model/stiny_casy.png" target="_blank">
+    <img src="images/model/stiny_casy.png" alt="Mapa stínu na střeše v nejdražších okamžicích roku">
+  </a>
+  <div class="caption">
+    <strong>Stín na střeše v šesti nejdražších okamžicích roku</strong>
+    Žlutá = osluněno, tmavá = ve stínu. Počítáno z mračna bodů, takže je v tom
+    i stín vlastních komínů a vikýře, ne jen okolních stromů.
+  </div>
+</div>
+
+<div class="callout">
+  <strong>Stín je u nás ranní záležitost</strong>
+  Deset nejhorších kombinací měsíce a hodiny jsou skoro samá rána mezi 7. a 9. hodinou.
+  Sedí to na geometrii: <strong>smrk stojí na azimutu 97° pod úhlem 24°, lípa na 76° pod 14°</strong> —
+  obojí přímo na východ. Proto má také východní pole zdaleka nejvyšší ztrátu (8,8 %).
+</div>
+
+<table class="tab">
+  <thead>
+    <tr><th>Měsíc</th><th>Podíl na roční ztrátě</th><th>Nejhorší hodina</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Srpen</strong></td><td><strong>18,2 %</strong></td><td>8:00</td></tr>
+    <tr><td>Květen</td><td>16,0 %</td><td>8:00</td></tr>
+    <tr><td>Červenec</td><td>15,5 %</td><td>8:00</td></tr>
+    <tr><td>Září</td><td>11,0 %</td><td>8:00</td></tr>
+    <tr><td>Duben</td><td>10,1 %</td><td>8:00</td></tr>
+    <tr><td>Červen</td><td>9,2 %</td><td>20:00 — jediný večerní případ (habr)</td></tr>
+    <tr><td>Listopad až leden</td><td>5,3 % dohromady</td><td>9–10:00</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warn">
+  <strong>⚠️ Nejdelší stín a nejdražší stín jsou dvě různé věci</strong>
+  Prosincový stín přes celou střechu vypadá dramaticky, ale stojí <strong>1,2 % roční
+  ztráty</strong> — slunce v tu dobu dává tak málo, že na tom nezáleží. Naopak srpnové
+  ráno v 8:00 zabírá jen kus východní plochy a je to <strong>nejdražší hodina celého
+  roku</strong>. Proto je u každého obrázku napsané, kolik ta hodina dělá z roční ztráty.
+  Bez toho čísla je mapa stínu zavádějící.
+</div>
+
+<h3>Vzdálený obzor — prověřeno, a je ho škoda počítat</h3>
+
+<p>Objekt leží nad údolím a v jižní výseči (azimut 110–210°) má obzor ve výšce <strong>10,1°</strong>
+— zalesněný svah přes údolí. Východ 2,1°, západ 0,6°. Zaměřeno z panoramat, je to
+i v <a href="data/obzor_vsenory.csv">obzor_vsenory.csv</a>.</p>
+
+<div class="drawing-card">
+  <a href="images/model/obzor_rocni.png" target="_blank">
+    <img src="images/model/obzor_rocni.png" alt="Vliv vzdáleného obzoru přes celý rok">
+  </a>
+  <div class="caption">
+    <strong>Kdy Slunce skutečně vyjde nad obzor a co to stojí</strong>
+    Vlevo kolik rána a večera obzor ukrojí, vpravo kolik to dělá energeticky.
+  </div>
+</div>
+
+<div class="callout">
+  <strong>Obzor bere hodně času, ale skoro žádnou energii</strong>
+  Slunce je <strong>7,6 % denních hodin</strong> nad geometrickým horizontem, ale za svahem.
+  Energeticky to dělá jen <strong>0,19 % přímého ozáření</strong>. Důvod je v tom, jak slabé
+  slunce v tu dobu je: průměrné DNI v zablokovaných hodinách je <strong>6 W/m²</strong>
+  proti <strong>262 W/m²</strong> jindy — čtyřicetkrát méně.<br><br>
+  Nejlíp je to vidět na prosinci: obzor sebere <strong>25 % denního času a 0,0 % energie</strong>.
+  Jediný měsíc, kde to něco dělá, je <strong>únor s 3,1 %</strong>.<br><br>
+  <strong>Proto se soustřeďte na stromy na východě, ne na obzor</strong> — místní překážky
+  berou 7,5 % výroby, obzor zhruba 0,2 %. Píšeme to sem proto, aby vás nestál zbytečnou práci.
+</div>
+
+<div class="callout warn">
+  <strong>⚠️ Co v tom čísle není</strong>
+  Počítáme jen <strong>přímé</strong> ozáření. Obzor ubírá i kus oblohy, tedy difúzní složku,
+  a to v modelu není — hrubým odhadem dalších ~0,3 %, celkem tedy kolem 0,5 %. Pořád o řád
+  méně než stromy, ale netvrdíme, že je to přesná nula.
+</div>
+
+<div class="callout">
+  <strong>Porost poroste</strong>
+  Smrk ani borovice nejsou naše a kácení nemůžeme slíbit. Máme spočítanou i variantu
+  „všechen porost dál než 14 m o 2 m vyšší" — <strong>na vyžádání ji rádi pošleme</strong>.
+  Zde ji neuvádíme, aby se nepletla se skutečným stavem.
+</div>
+
+<h3>Co z toho plyne pro výrobu</h3>
+<table class="tab">
+  <thead>
+    <tr><th>Varianta</th><th>Roční výroba</th><th>Ztráta stínem</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bez jakéhokoli stínu (teoreticky)</td><td>13 800 kWh</td><td>—</td></tr>
+    <tr><td><strong>Se stínem, bez optimizérů</strong></td><td><strong>12 760 kWh</strong></td><td><strong>7,5 %</strong></td></tr>
+    <tr><td>Se stínem, s optimizéry na všech panelech</td><td>13 230 kWh</td><td>4,1 %</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <strong>Optimizéry jsme zvažovali a rozhodli se pro NE — ale rádi si necháme poradit</strong>
+  Vyšlo nám, že by zachránily zhruba <strong>475 kWh/rok</strong>, tedy 3,7 % výroby.
+  Proti doplatku ~27 000 Kč za osazení MPPT1 to nevychází ani za 20 let životnosti,
+  a každý optimizér je navíc další aktivní prvek na střeše, který může selhat.
+  <strong>Nepožadujeme je.</strong> Pokud si ale myslíte, že se u nás vyplatí, napište proč —
+  argument si rádi přečteme.<br><br>
+  <strong>Rapid Shutdown ale požadujeme</strong> — odpojovači na úrovni modulu, nikoli optimizéry.
+</div>
+
+<h3>Jak jsme počítali</h3>
+<ul class="req-list">
+  <li><strong>Geometrie</strong> — mračno bodů z dronu (WebODM), do každé střešní plochy proložena
+      rovina metodou nejmenších čtverců. Vyšlo: jih az. 155°/36,5°, západ az. 246°/35,5°,
+      východ az. 66°/37,5°.</li>
+  <li><strong>Stín</strong> — z mračna postavena výšková mapa s krokem 25 cm (92. percentil výšek
+      v buňce, aby jeden chybný bod nedělal ducha). Pro každý vzorek panelu se ray-marchingem
+      hledá obzor po 2° azimutu.</li>
+  <li><strong>Panel není bod</strong> — každý panel je rozdělen na <strong>tři pruhy podle bypass
+      diod</strong> (rovnoběžné s delší stranou modulu) a každý pruh na 8 vzorků. Proto vychází
+      jinak panel naležato a nastojato: stín stoupající od okapu vyřadí u ležatého panelu jen
+      spodní pruh, u stojatého zasáhne všechny tři najednou.</li>
+  <li><strong>Osvit</strong> — PVGIS TMY pro danou lokalitu, hodinu po hodině celý rok,
+      rozklad na přímou a difúzní složku (Hay–Davies). Stín se odečítá jen z přímé složky.</li>
+  <li><strong>Pracovní bod</strong> — string je sériové zapojení pruhů; hledá se maximum
+      výkonu při proudu omezeném nejslabším pruhem.</li>
+  <li><strong>Systémové ztráty</strong> — 14 % (kabely, měnič, znečištění).</li>
+</ul>
+
+<div class="callout warn">
+  <strong>⚠️ Kde je náš výpočet slabý</strong>
+  Koruny stromů bereme jako plné těleso, ačkoli listnaté stromy propouštějí část světla —
+  <strong>u lípy a habru tedy stín nejspíš přeceňujeme</strong>. Naopak neuvažujeme růst porostu
+  ani zimní ohyb větví. Model také nezná odraz od okolí a difúzní stín počítá zjednodušeně.
+</div>
+</section>
+
 <section id="technika">
 <h2>Technická specifikace</h2>
 
@@ -1280,7 +1592,7 @@ rozpočet, vadí mi nejasný.</p>
 <div class="callout warn">
   <strong>Komín na Východní ploše — viz fotografie níže</strong>
   Na Východní střešní ploše se nachází komín u horní hrany. Na dronové fotografii je vidět jeho stín
-  v odpoledních hodinách v srpnu. Tato plocha je zároveň orientována ENE (az. 68°, sklon 38,9°) a vyrábí
+  v odpoledních hodinách v srpnu. Tato plocha je zároveň orientována ENE (az. 66°, sklon 37,5°) a vyrábí
   primárně ráno — maximum kolem 9:00, ve 13:00 už jen 58 % maxima.
 </div>
 <ul class="req-list">
@@ -1313,7 +1625,7 @@ rozpočet, vadí mi nejasný.</p>
   <a href="images/drone/vychod.jpg" target="_blank">
     <img src="images/drone/vychod.jpg" alt="Východní plocha — stín komínu" style="max-width:480px;width:100%;border:1px solid #ccc;border-radius:6px;display:block">
   </a>
-  <p style="font-size:13px;color:#555;margin-top:6px">Východní plocha (ENE, az. 68°) — fotografie z dronu, srpen 2026. Komín je patrný u horního okraje plochy.</p>
+  <p style="font-size:13px;color:#555;margin-top:6px">Východní plocha (ENE, az. 66°) — fotografie z dronu, srpen 2026. Komín je patrný u horního okraje plochy.</p>
 </div>
 
 <h4>Ostatní otázky</h4>
@@ -1331,19 +1643,28 @@ rozpočet, vadí mi nejasný.</p>
 <h2>Fotodokumentace střechy</h2>
 <p>Fotografie pořízeny dronem v srpnu 2026. Kliknutím na fotografii otevřete v plném rozlišení.</p>
 
+<div class="callout">
+  <strong>Snímky jsou oříznuté na náš pozemek</strong>
+  Sousední pozemky jsme z fotografií odstranili — nejsou naše a nebudeme je zveřejňovat.
+  Okolní zástavbu a porost, které na nás stíní, najdete <strong>schematicky</strong>
+  v <a href="#podklady">prostorovém modelu</a> a číselně v
+  <a href="data/prekazky_vsenory.csv">seznamu překážek</a>. Pro výpočet zastínění
+  je to použitelnější než fotka.
+</div>
+
 <h3>Pohledy na jednotlivé plochy</h3>
 <div class="gallery">
   <a href="images/drone/jih.jpg" target="_blank">
     <img src="images/drone/jih.jpg" alt="Jižní střešní plocha">
-    <div class="ph-label">Jižní plocha (SSE, az. 158°)</div>
+    <div class="ph-label">Jižní plocha (SSE, az. 155°)</div>
   </a>
   <a href="images/drone/vychod.jpg" target="_blank">
     <img src="images/drone/vychod.jpg" alt="Východní střešní plocha">
-    <div class="ph-label">Východní plocha (ENE, az. 68°)</div>
+    <div class="ph-label">Východní plocha (ENE, az. 66°)</div>
   </a>
   <a href="images/drone/zapad.jpg" target="_blank">
     <img src="images/drone/zapad.jpg" alt="Západní střešní plocha">
-    <div class="ph-label">Západní plocha (WSW, az. 248°)</div>
+    <div class="ph-label">Západní plocha (WSW, az. 246°)</div>
   </a>
 </div>
 
@@ -1363,7 +1684,7 @@ rozpočet, vadí mi nejasný.</p>
   </a>
   <a href="images/drone/tophighest.jpg" target="_blank">
     <img src="images/drone/tophighest.jpg" alt="Pohled shora z největší výšky">
-    <div class="ph-label">Shora — celý pozemek</div>
+    <div class="ph-label">Shora — dům a zahrada</div>
   </a>
 </div>
 </section>

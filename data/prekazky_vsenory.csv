@@ -1,0 +1,11 @@
+# Zamerene prekazky v okoli. Vysky overeny nezavisle
+#   (mracno bodu z dronu / delka vrzeneho stinu / primy nalet).
+# Azimut a vzdalenost jsou VZDY od stredu strechy;
+#   uhel je nad vodorovnou rovinou ve vysce okapu.
+nazev,azimut_deg,vzdalenost_m,vrchol_m_n_m,vyska_nad_okapem_m,polomer_koruny_m,uhel_od_okapu_deg
+lipa,76.0,18.0,204.04,4.45,3.5,13.9
+strom_jv_roh,87.5,11.3,201.00,1.41,2.6,7.1
+smrk,97.0,20.0,208.52,8.93,2.3,24.1
+borovice,120.7,43.0,217.94,18.35,3.5,23.1
+strom_jz_roh,207.4,9.8,200.09,0.50,1.2,2.9
+habr,281.0,20.0,204.89,5.30,5.5,14.8
