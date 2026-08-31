@@ -534,13 +534,22 @@ do úrovně vrcholu. Shoda mezi metodami je 0,1 až 0,6 m.</p>
     <li><a href="images/layouts/strecha_VYCHOD_odstup20.svg">strecha_VYCHOD_odstup20.svg</a> — Východ</li>
   </ul>
 
-  <p><strong>Prostorový model střechy (STL)</strong> — připravuji aktualizovanou verzi,
-  doplním ji sem během několika dní. Pokud ho potřebujete dřív, napište si a pošlu Vám ho.</p>
+  <p><strong>Prostorový model domu a okolí</strong> — dům, mansarda, všechny čtyři střešní
+  plochy, hřebenáče, vikýř, pět komínů, zaměřené stromy i sousední zástavba. Postavený
+  <em>ze změřených rozměrů</em>, ne z mračna bodů, takže je čistý a rovnou měřitelný.
+  Souřadnice v metrech, X na východ, Y na sever, Z vzhůru, nula na terénu u domu:</p>
+  <ul style="margin-top:4px">
+    <li><a href="data/model_vsenory.stl">model_vsenory.stl</a> — binární STL, načte každý 3D program i PV*SOL či Aurora</li>
+    <li><a href="data/model_vsenory.dxf">model_vsenory.dxf</a> — DXF s entitami 3DFACE <strong>rozdělenými do vrstev</strong>
+        (STRECHA_JIH, STRECHA_ZAPAD, STRECHA_VYCHOD, KOMINY, VIKYR, STROMY_ZAMERENE, SOUSEDNI_ZASTAVBA…)
+        — pro AutoCAD, BricsCAD, ZWCAD</li>
+    <li><a href="data/model_vsenory.obj">model_vsenory.obj</a> — OBJ s pojmenovanými skupinami, pro Blender či SketchUp</li>
+  </ul>
 
   <p style="margin-bottom:0"><strong><a href="data/fusion360_strecha.py">fusion360_strecha.py</a></strong>
   — skript pro Autodesk Fusion 360, který model postaví <em>parametricky</em> (sklon, azimuty
   a rozměry jsou pojmenované parametry, dají se přenastavit). Užitečné jen pokud ve Fusionu
-  pracujete — jinak použijte STL výše.</p>
+  pracujete — jinak použijte STL nebo DXF výše.</p>
 </div>
 
 <div class="callout info">
