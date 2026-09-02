@@ -697,7 +697,7 @@ do úrovně vrcholu. Shoda mezi metodami je 0,1 až 0,6 m.</p>
       <li>3-fázový smart meter na hlavní přívod</li>
       <li><strong>Podružný elektroměr pro měření spotřeby</strong> — 3-fázový, <strong>stačí nekalibrovaný</strong>, s displejem. Možnost napojení na Home Assistant (Modbus RS485 / LAN) je výhodou.</li>
       <li>Jistič a ochranné prvky FVE (SPD, RCD dle ČSN)</li>
-      <li><strong>AC rozvaděč FVE s rezervou min. 8 volných DIN pozic</strong> — vedle sebe v jednom celku, plus prostor a průchodka pro budoucí přívod. V nabídce prosím <strong>uveďte, kolik volných pozic rozvaděč po osazení skutečně bude mít</strong>. <em>Důvod viz poznámka k wallboxu níže.</em></li>
+      <li><strong>AC rozvaděč FVE s rezervou min. 12 volných DIN pozic</strong> — z toho <strong>8 souvisle vedle sebe</strong>, plus volný prostor a průchodka pro budoucí přívod. Součástí nabídky je <strong>vyplněná tabulka osazení</strong> — viz kapitola „Obchodní podmínky → Osazení AC rozvaděče".</li>
       <li>Výchozí revize elektroinstalace dle ČSN</li>
       <li>Revize FVE dle ČSN EN 62446</li>
       <li>Nahlášení FVE distributorovi, PPP/UTP</li>
@@ -722,7 +722,7 @@ do úrovně vrcholu. Shoda mezi metodami je 0,1 až 0,6 m.</p>
   a nechci je mít v nabídce ani v ceně:
   <ul style="margin:8px 0 0 18px">
     <li><strong>Příprava na wallbox / nabíjení elektromobilu</strong> — vypuštěno, nenaceňujte kabeláž, jištění ani samotnou nabíječku.
-        <br><strong>Jediná výjimka: volné místo v AC rozvaděči.</strong> Nabíječku si možná pořídím za pár let a nechci kvůli ní měnit skříň. Proto požaduji <strong>min. 8 volných DIN pozic vedle sebe</strong> (3f jistič 3 pozice + proudový chránič typu B / A-EV 4 pozice + 1 rezerva na stykač HDO) a volný prostor s průchodkou pro budoucí přívod. Žádné další náklady na wallbox v nabídce nechci.</li>
+        <br><strong>Jediná výjimka: volné místo v AC rozvaděči.</strong> Nabíječku si možná pořídím za pár let a nechci kvůli ní měnit skříň. Proto požaduji <strong>8 volných DIN pozic souvisle vedle sebe</strong> (3f jistič 3 M + <strong>proudový chránič typu B</strong> 4 M + 1 M rezerva na stykač HDO) a volný prostor s průchodkou pro budoucí přívod. Spolu s další rezervou to dává <strong>celkem 12 volných pozic</strong> — rozpis v kapitole „Osazení AC rozvaděče". Žádné další náklady na wallbox v nabídce nechci.</li>
     <li><strong>Chytré řízení bojlerů</strong> — řeším si sám přes Home Assistant (viz výše)</li>
     <li><strong>Klimatizace / multisplit</strong> — řeším samostatnou poptávkou, s FVE ji nespojuji</li>
   </ul>
@@ -1525,6 +1525,72 @@ rozpočet, vadí mi nejasný.</p>
   <p style="font-size:13px;color:#555;margin-top:6px">Východní plocha (ENE, az. 66°) — fotografie z dronu, srpen 2026. Komín je patrný u horního okraje plochy.</p>
 </div>
 
+<h3 id="rozvadec-osazeni">Osazení AC rozvaděče — vyplňte prosím tabulku</h3>
+
+<div class="callout">
+  <strong>Proč to chci vidět rozepsané.</strong>
+  Rozvaděč se za dva roky měnit nebude. Potřebuji si ověřit, že se do skříně, kterou nabízíte,
+  vejde všechno požadované <em>a</em> zbude rezerva. Níže je můj odhad — <strong>není to
+  závazný předpis</strong>. Pokud některý prvek řešíte jinak, jinde nebo ho nepovažujete
+  za potřebný, napište to místo počtu modulů. Zajímá mě váš návrh, ne odsouhlasení mého.
+  <br><br>
+  <em>1 modul (M) = 17,5 mm šířky na DIN liště.</em>
+</div>
+
+<table class="tab">
+<tr><th>Prvek</th><th style="width:110px">Můj odhad</th><th style="width:130px">Vaše řešení (M)</th></tr>
+<tr><td>Jistič / odpínač <strong>GRID</strong> (měnič ↔ síť)</td><td>4 M</td><td></td></tr>
+<tr><td>Jistič <strong>LOAD</strong> (měnič ↔ zálohované okruhy)</td><td>4 M</td><td></td></tr>
+<tr><td>Přepěťová ochrana <strong>SPD AC typ 1+2</strong> (dům má hromosvod)</td><td>4 M</td><td></td></tr>
+<tr><td>Předjištění SPD</td><td>3 M</td><td></td></tr>
+<tr><td>Proudový chránič <strong>300 mA typ A</strong> <span class="badge">viz pozn.</span></td><td>4 M</td><td></td></tr>
+<tr><td>Modulární stykač zálohy</td><td>4 M</td><td></td></tr>
+<tr><td>Smart meter / modul měřicích transformátorů</td><td>2 M</td><td></td></tr>
+<tr><td><strong>Podružný elektroměr 3f s displejem</strong></td><td>4–7 M</td><td></td></tr>
+<tr><td><strong>Servisní spínač</strong> (blokovaný) <span class="badge">nový požadavek</span></td><td>4–6 M</td><td></td></tr>
+<tr><td><strong>Ruční přepínač I‑0‑II</strong> <span class="badge">nový požadavek</span></td><td>4–6 M</td><td></td></tr>
+<tr><td><strong>Vazební spínač</strong> <span class="badge">nový požadavek</span></td><td>4 M</td><td></td></tr>
+<tr><td>Pomocná relé, řízení, svorkovnice</td><td>4 M</td><td></td></tr>
+<tr style="background:#f5f5f5"><td><strong>Osazení celkem</strong></td><td><strong>45–52 M</strong></td><td></td></tr>
+</table>
+
+<h4>Požadovaná rezerva — 12 volných pozic</h4>
+
+<table class="tab">
+<tr><th>Účel</th><th style="width:110px">Pozic</th><th>Rozpis</th></tr>
+<tr><td><strong>Budoucí wallbox 11 kW</strong> (3× 16 A)</td><td><strong>8</strong></td>
+    <td>jistič 3f 3 M + <strong>proudový chránič typu B</strong> 4 M + 1 M na stykač HDO</td></tr>
+<tr><td>Home Assistant, řízení, podružné měření okruhů</td><td><strong>4</strong></td>
+    <td>stykače, moduly na DIN liště, pomocné jištění</td></tr>
+<tr style="background:#f5f5f5"><td><strong>Rezerva celkem</strong></td><td><strong>12</strong></td><td></td></tr>
+</table>
+
+<ul class="req-list">
+  <li data-icon="✅"><strong>Min. 12 volných DIN pozic</strong> po kompletním osazení.</li>
+  <li data-icon="✅"><strong>Z toho 8 souvisle vedle sebe</strong> — jistič a chránič wallboxu se nesmí rozdělit do dvou řad.</li>
+  <li data-icon="✅"><strong>Volný prostor a průchodka</strong> pro budoucí přívod wallboxu.</li>
+  <li data-icon="✅">V nabídce <strong>uveďte typ a velikost skříně</strong> (počet modulů a řad) a <strong>skutečný počet volných pozic</strong> po osazení.</li>
+</ul>
+
+<div class="callout warn">
+  <strong>Proč u wallboxu chránič typu B, a ne typ A</strong>
+  Nabíječka může do zbytkového proudu vnést <strong>stejnosměrnou složku</strong>, kterou chránič
+  typu A nemusí vybavit. Buď má wallbox vestavěnou detekci 6 mA DC (pak stačí typ A s označením EV),
+  nebo musí být venku typ B — širší i výrazně dražší. <strong>Místo rezervuji na tu horší variantu.</strong>
+  <br><br>
+  <strong>Samotný wallbox, jeho kabeláž ani jištění nenaceňujte</strong> — chci pouze místo.
+</div>
+
+<div class="callout warn">
+  <strong>Nezaměňovat s 6 pozicemi pro bojlery</strong>
+  Volné místo pro 6 DIN pozic určené na řízení bojlerů je <strong>v rozvaděči v přízemí</strong>,
+  ne v AC rozvaděči FVE. Jsou to dva různé rozvaděče a dva nezávislé požadavky.
+</div>
+
+<ul class="req-list">
+  <li data-icon="❓"><strong>Hlavní jistič 3×25 A:</strong> budoucí wallbox poteče přes stejný hlavní jistič jako všechno ostatní. Zvládnou vaše měřicí transformátory / smart meter zahrnout jeho odběr do hlídání hlavního jističe, aby nevyhazoval? Je k tomu potřeba něco doplnit už teď?</li>
+</ul>
+
 <h4>Chování při poruše měniče — servisní a vazební spínač</h4>
 <div class="callout warn">
   <strong>Rozbitý měnič nesmí znamenat, že zůstanu na zálohovaných okruzích bez napětí.</strong><br><br>
@@ -1562,7 +1628,6 @@ rozpočet, vadí mi nejasný.</p>
 <li data-icon="❓">Jaký typ Rapid Shutdown doporučujete a proč (modul-level vs. string-level)?</li>
   <li data-icon="❓">U Varianty B (baterie Wattery Smart 16 kWh): Potvrdíte, že zajistíte revizi s touto baterií a připojení k distributorovi (PPP/UTP)?</li>
   <li data-icon="🔴"><strong>Elektroměry uvnitř domu (ne v kapličce):</strong> Máte zkušenost s vyřízením výjimky u ČEZ Distribuce, aby nebylo nutné přemístit elektroměry do venkovního pilíře? Kolik případů jste řešili a <strong>jaká je vaše úspěšnost</strong>? Viz sekce Elektrická infrastruktura.</li>
-  <li data-icon="❓"><strong>Kolik volných DIN pozic</strong> bude mít AC rozvaděč FVE po kompletním osazení? Požaduji <strong>min. 8 volných pozic vedle sebe</strong> a prostor s průchodkou pro budoucí přívod — kvůli možnému doplnění wallboxu za několik let. Samotný wallbox ani jeho kabeláž nenaceňujte.</li>
   <li data-icon="❓">Jak řešíte zálohu (backup) 1. patra, když jeho přívod nejde přes sklep, kde bude měnič? Je to ve vaší nabídce realizovatelné a za jakou cenu?</li>
 </ul>
 </section>
