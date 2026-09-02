@@ -697,6 +697,7 @@ do úrovně vrcholu. Shoda mezi metodami je 0,1 až 0,6 m.</p>
       <li>3-fázový smart meter na hlavní přívod</li>
       <li><strong>Podružný elektroměr pro měření spotřeby</strong> — 3-fázový, <strong>stačí nekalibrovaný</strong>, s displejem. Možnost napojení na Home Assistant (Modbus RS485 / LAN) je výhodou.</li>
       <li>Jistič a ochranné prvky FVE (SPD, RCD dle ČSN)</li>
+      <li><strong>AC rozvaděč FVE s rezervou min. 8 volných DIN pozic</strong> — vedle sebe v jednom celku, plus prostor a průchodka pro budoucí přívod. V nabídce prosím <strong>uveďte, kolik volných pozic rozvaděč po osazení skutečně bude mít</strong>. <em>Důvod viz poznámka k wallboxu níže.</em></li>
       <li>Výchozí revize elektroinstalace dle ČSN</li>
       <li>Revize FVE dle ČSN EN 62446</li>
       <li>Nahlášení FVE distributorovi, PPP/UTP</li>
@@ -720,7 +721,8 @@ do úrovně vrcholu. Shoda mezi metodami je 0,1 až 0,6 m.</p>
   Pokud jste ode mne dostali starší verzi poptávky, tyto body už <strong>nepožaduji</strong>
   a nechci je mít v nabídce ani v ceně:
   <ul style="margin:8px 0 0 18px">
-    <li><strong>Příprava na wallbox / nabíjení elektromobilu</strong> — vypuštěno, neřeším</li>
+    <li><strong>Příprava na wallbox / nabíjení elektromobilu</strong> — vypuštěno, nenaceňujte kabeláž, jištění ani samotnou nabíječku.
+        <br><strong>Jediná výjimka: volné místo v AC rozvaděči.</strong> Nabíječku si možná pořídím za pár let a nechci kvůli ní měnit skříň. Proto požaduji <strong>min. 8 volných DIN pozic vedle sebe</strong> (3f jistič 3 pozice + proudový chránič typu B / A-EV 4 pozice + 1 rezerva na stykač HDO) a volný prostor s průchodkou pro budoucí přívod. Žádné další náklady na wallbox v nabídce nechci.</li>
     <li><strong>Chytré řízení bojlerů</strong> — řeším si sám přes Home Assistant (viz výše)</li>
     <li><strong>Klimatizace / multisplit</strong> — řeším samostatnou poptávkou, s FVE ji nespojuji</li>
   </ul>
@@ -1523,12 +1525,44 @@ rozpočet, vadí mi nejasný.</p>
   <p style="font-size:13px;color:#555;margin-top:6px">Východní plocha (ENE, az. 66°) — fotografie z dronu, srpen 2026. Komín je patrný u horního okraje plochy.</p>
 </div>
 
+<h4>Chování při poruše měniče — servisní a vazební spínač</h4>
+<div class="callout warn">
+  <strong>Rozbitý měnič nesmí znamenat, že zůstanu na zálohovaných okruzích bez napětí.</strong><br><br>
+  Zálohované okruhy jsou v domě ty nejdůležitější. Pokud u navrženého zapojení platí, že
+  při poruše měniče zůstanou bez napětí i ve chvíli, kdy v síti proud je, chci to vědět
+  <strong>předem</strong> a chci mít možnost si to nechat vyřešit.<br><br>
+  Inspirací je referenční schéma AC/DC rozvaděče firmy KAVOJ, kde jsou pro tento účel
+  tři prvky:
+  <ul style="margin:8px 0 0 18px">
+    <li><strong>Servisní spínač</strong> — blokovaný vypínač, který napájí zálohované okruhy
+        <strong>přímo ze sítě</strong>, když je FVE mimo provoz. Blokování zajišťuje, že nejde
+        sepnout současně se střídačem.</li>
+    <li><strong>Ruční přepínač ostrovního provozu I‑0‑II</strong> — přepnutí na ostrov ručně,
+        ne jen automaticky při výpadku sítě.</li>
+    <li><strong>Vazební spínač</strong> — galvanické odpojení odběrného místa od distribuční
+        soustavy při ostrovním provozu.</li>
+  </ul>
+  <br>
+  <strong>Nejde mi o to mít všechny tři za každou cenu.</strong> Jde mi o to vědět, co která
+  nabídka obsahuje, a mít možnost si servisní spínač doobjednat. Uvítám, když místo pouhého
+  nacenění napíšete, co považujete za správné řešení a proč — případně že to u vašeho
+  zapojení není potřeba a z jakého důvodu.
+</div>
+<ul class="req-list">
+  <li data-icon="🔴"><strong>Co se u vašeho řešení stane se zálohovanými okruhy, když odejde měnič?</strong></li>
+  <li data-icon="❓">Nabízíte servisní spínač? Uveďte jej prosím jako <strong>samostatnou položku s cenou</strong>.</li>
+  <li data-icon="❓">Ruční přepínač ostrovního provozu I‑0‑II — máte jej v řešení, nebo jen automatické přepnutí?</li>
+  <li data-icon="❓">Vazební spínač pro galvanické odpojení od distribuční soustavy — jak to řešíte a vyžaduje to ČEZ Distribuce?</li>
+  <li data-icon="❓">Jaká je při ostrovním provozu <strong>maximální zátěž</strong> a co se stane při jejím překročení? Je nutná ruční kontrola zátěže před přepnutím?</li>
+</ul>
+
 <h4>Ostatní otázky</h4>
 <ul class="req-list">
   <li data-icon="❓">Potvrdíte navržené zapojení 3 stringů na 2 MPPT Deye 15K (MPPT1 = jih 9 ∥ východ 9, MPPT2 = západ 10), nebo navrhnete lepší? Jaké kabely, průřezy, délky?</li>
 <li data-icon="❓">Jaký typ Rapid Shutdown doporučujete a proč (modul-level vs. string-level)?</li>
   <li data-icon="❓">U Varianty B (baterie Wattery Smart 16 kWh): Potvrdíte, že zajistíte revizi s touto baterií a připojení k distributorovi (PPP/UTP)?</li>
   <li data-icon="🔴"><strong>Elektroměry uvnitř domu (ne v kapličce):</strong> Máte zkušenost s vyřízením výjimky u ČEZ Distribuce, aby nebylo nutné přemístit elektroměry do venkovního pilíře? Kolik případů jste řešili a <strong>jaká je vaše úspěšnost</strong>? Viz sekce Elektrická infrastruktura.</li>
+  <li data-icon="❓"><strong>Kolik volných DIN pozic</strong> bude mít AC rozvaděč FVE po kompletním osazení? Požaduji <strong>min. 8 volných pozic vedle sebe</strong> a prostor s průchodkou pro budoucí přívod — kvůli možnému doplnění wallboxu za několik let. Samotný wallbox ani jeho kabeláž nenaceňujte.</li>
   <li data-icon="❓">Jak řešíte zálohu (backup) 1. patra, když jeho přívod nejde přes sklep, kde bude měnič? Je to ve vaší nabídce realizovatelné a za jakou cenu?</li>
 </ul>
 </section>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1066" height="946" viewBox="0 0 1066 946" font-family="DejaVu Sans, Arial, sans-serif">
+<defs><marker id="s" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M1,4.5 L8,1.5 L8,7.5 Z" fill="#555"/></marker><pattern id="h" width="9" height="9" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="9" stroke="#2b7bb9" stroke-width="2.5"/></pattern></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="105.0" y="34" font-size="21" font-weight="bold" fill="#222">Sklep — zeď pro FVE · 233 × 219 cm</text>
+<text x="105.0" y="55" font-size="13" fill="#666">zaměřeno 2. 9. 2026 · rozměry v cm · pohled na zeď zepředu</text>
+<rect x="105.0" y="80.0" width="745.6" height="700.8" fill="#fcfcfa" fill-opacity="1.00" stroke="#333" stroke-width="2"/>
+<rect x="501.8" y="156.8" width="348.8" height="624.0" fill="#f1f8f1"/>
+<rect x="105.0" y="80.0" width="745.6" height="76.8" fill="url(#h)" stroke="#2b7bb9" stroke-width="2"/>
+<rect x="105.0" y="515.2" width="396.8" height="73.6" fill="url(#h)" stroke="#2b7bb9" stroke-width="2"/>
+<text x="477.8" y="123.4" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b7bb9">TRUBKY — nemontovat</text>
+<text x="303.4" y="556.0" text-anchor="middle" font-size="12" font-weight="bold" fill="#2b7bb9">TRUBKY</text>
+<rect x="105.0" y="156.8" width="396.8" height="358.4" fill="#fdecea" fill-opacity="1.00" stroke="#c9382c" stroke-width="2"/>
+<text x="303.4" y="325.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#c9382c">PLYNOVÝ KOTEL</text>
+<text x="303.4" y="341.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#c9382c">tepelný zdroj</text>
+<text x="303.4" y="357.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#c9382c">baterie sem NESMÍ</text>
+<rect x="105.0" y="588.8" width="396.8" height="192.0" fill="#fffaf0" fill-opacity="1.00" stroke="#b8860b" stroke-width="2"/>
+<text x="303.4" y="681.8" text-anchor="middle" font-size="15" font-weight="bold" fill="#b8860b">volné, ale POD VODNÍMI TRUBKAMI</text>
+<text x="303.4" y="697.8" text-anchor="middle" font-size="12" font-weight="normal" fill="#b8860b">kondenzace — baterie NE</text>
+<rect x="732.2" y="156.8" width="118.4" height="160.0" fill="#eceff1" fill-opacity="1.00" stroke="#455a64" stroke-width="2"/>
+<text x="791.4" y="233.8" text-anchor="middle" font-size="15" font-weight="bold" fill="#455a64">STÁVAJÍCÍ</text>
+<text x="791.4" y="249.8" text-anchor="middle" font-size="12" font-weight="normal" fill="#455a64">AC sklep</text>
+<rect x="426.3" y="156.8" width="465.9" height="560.0" fill="#2e7d32" fill-opacity="0.05" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="7,5"/>
+<text x="429.3" y="150.8" font-size="12" font-weight="bold" fill="#2e7d32">obálka odstupu 50 cm dle manuálu Deye</text>
+<rect x="850.6" y="156.8" width="41.6" height="624.0" fill="#f5fbf5" stroke="#8fbc8f" stroke-width="1.5" stroke-dasharray="6,5"/>
+<text x="863.4" y="304.0" font-size="12" font-weight="bold" fill="#3a7d3a" transform="rotate(90 863.4 304.0)">ZEĎ KONČÍ — volný prostor</text>
+<rect x="901.8" y="156.8" width="188.8" height="198.4" fill="#fff3e0" fill-opacity="1.00" stroke="#e65100" stroke-width="2"/>
+<text x="996.2" y="245.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#e65100">NOVÝ AC ROZVADĚČ</text>
+<text x="996.2" y="261.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#e65100">72 DIN · 59 × 62 cm</text>
+<text x="996.2" y="277.0" text-anchor="middle" font-size="12" font-weight="normal" fill="#e65100">NA TUTO ZEĎ SE NEVEJDE</text>
+<rect x="508.2" y="617.6" width="112.0" height="128.0" fill="#e1f5fe" fill-opacity="1.00" stroke="#0277bd" stroke-width="2"/>
+<text x="564.2" y="678.6" text-anchor="middle" font-size="15" font-weight="bold" fill="#0277bd">DC ROZVADĚČ</text>
+<text x="564.2" y="694.6" text-anchor="middle" font-size="12" font-weight="normal" fill="#0277bd">35 × 40</text>
+<rect x="586.3" y="316.8" width="145.9" height="240.0" fill="#e6f4ea" fill-opacity="1.00" stroke="#1a6b3a" stroke-width="2"/>
+<text x="659.2" y="433.8" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a6b3a">MĚNIČ Deye 15K</text>
+<text x="659.2" y="449.8" text-anchor="middle" font-size="12" font-weight="normal" fill="#1a6b3a">45,6 × 75 cm</text>
+<rect x="501.8" y="556.8" width="348.8" height="224.0" fill="#eef7ef" stroke="#1a6b3a" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="676.2" y="672.8" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a6b3a">prostor na kabeláž pod měničem — 70 cm</text>
+<rect x="901.8" y="506.2" width="128.0" height="226.6" fill="#f7e9fa" fill-opacity="1.00" stroke="#8a4b9c" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="965.8" y="616.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#8a4b9c">BATERIE 16 kWh</text>
+<text x="965.8" y="632.5" text-anchor="middle" font-size="12" font-weight="normal" fill="#8a4b9c">40 × 70,8 · 109 kg</text>
+<rect x="901.8" y="732.8" width="128.0" height="48.0" fill="#e0e0e0" fill-opacity="1.00" stroke="#666" stroke-width="2"/>
+<text x="965.8" y="761.8" text-anchor="middle" font-size="15" font-weight="bold" fill="#666">podložka 15</text>
+<text x="965.8" y="460.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a4b9c">NA TUTO ZEĎ</text>
+<text x="965.8" y="475.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a4b9c">NEPATŘÍ —</text>
+<text x="965.8" y="490.2" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a4b9c">stojí na podlaze</text>
+<line x1="76.2" y1="80.0" x2="76.2" y2="780.8" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="69.2" y="434.4" text-anchor="end" font-size="13" fill="#555">219</text>
+<line x1="21.8" y1="80.0" x2="21.8" y2="156.8" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="14.8" y="122.4" text-anchor="end" font-size="13" fill="#555">24</text>
+<line x1="21.8" y1="156.8" x2="21.8" y2="515.2" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="14.8" y="340.0" text-anchor="end" font-size="13" fill="#555">112</text>
+<line x1="21.8" y1="588.8" x2="21.8" y2="780.8" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="14.8" y="688.8" text-anchor="end" font-size="13" fill="#555">60</text>
+<line x1="105.0" y1="816.0" x2="850.6" y2="816.0" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="477.8" y="833.0" text-anchor="middle" font-size="13" fill="#555">233</text>
+<line x1="105.0" y1="870.4" x2="501.8" y2="870.4" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="303.4" y="887.4" text-anchor="middle" font-size="13" fill="#555">124 — kotel a trubky</text>
+<line x1="501.8" y1="870.4" x2="850.6" y2="870.4" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="676.2" y="887.4" text-anchor="middle" font-size="13" fill="#555">volná zóna 109</text>
+<line x1="879.4" y1="80.0" x2="879.4" y2="316.8" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="886.4" y="202.4" text-anchor="start" font-size="13" fill="#555">74</text>
+<line x1="732.2" y1="51.2" x2="850.6" y2="51.2" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="791.4" y="45.2" text-anchor="middle" font-size="13" fill="#555">37</text>
+<line x1="567.1" y1="156.8" x2="567.1" y2="316.8" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="560.1" y="240.8" text-anchor="end" font-size="13" fill="#555">50</text>
+<line x1="567.1" y1="556.8" x2="567.1" y2="780.8" stroke="#555" stroke-width="1.1" marker-start="url(#s)" marker-end="url(#s)"/>
+<text x="560.1" y="672.8" text-anchor="end" font-size="13" fill="#555">60</text>
+<text x="105.0" y="842.8" font-size="13" fill="#2e7d32">MĚNIČ VYCHÁZÍ: nahoře 50 cm · dole 70 cm · vpravo volný prostor za koncem zdi · vlevo 26 cm ke stávající zóně</text>
+<text x="105.0" y="862.8" font-size="13" fill="#c9382c">NEVEJDE SE: AC rozvaděč 72 DIN (59 × 62 cm) — po umístění měniče zbývá vlevo jen 26 cm šířky. Musí jinam.</text>
+<text x="105.0" y="882.8" font-size="13" fill="#8a4b9c">Baterie na tuto zeď nepatří — 109 kg stojí na podlaze. Postavená bokem ke zdi zabere jen 23 cm šířky; RESACS Light je ležatá 44 × 26 cm.</text>
+<text x="105.0" y="902.8" font-size="13" fill="#2e7d32">Cihlová zeď = třída reakce na oheň A1 → vyhláška 114/2023 Sb. §4b splněna bez nehořlavé podložky</text>
+<text x="105.0" y="922.8" font-size="13" fill="#b26500">POZOR na odstup NAHOŘE: manuál neuvádí, kde má měnič sání a výdech. U chlazení ventilátorem stoupá teplý vzduch vzhůru — horní odstup je proto ten poslední, který obětovat.</text>
+<text x="105.0" y="942.8" font-size="13" fill="#444">K OVĚŘENÍ: skutečný rozměr AC rozvaděče · manipulační prostor před rozvaděči dle ČSN · umístění baterie dál od kotle</text>
+</svg>
